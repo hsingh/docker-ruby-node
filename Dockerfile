@@ -1,5 +1,7 @@
 FROM ruby:2.0.0-p647
 
+RUN gem install --no-rdoc --no-ri sass compass
+
 RUN set -ex \
   && for key in \
     9554F04D7259F04124DE6B476D5A82AC7E37093B \
